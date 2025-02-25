@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import path from "path";
 import {engine} from "express-handlebars";
+import middlewares from './middlewares';
 
 import handlers from './handlers';
 
@@ -14,6 +15,9 @@ const port = process.env.PORT || 3000;
 app.engine("hbs", engine({ extname: ".hbs" }));
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "views"));
+
+// Check if the service is available
+app.use(middlewares.availabilityChecker);
 
 // Define routes
 app.get("/", handlers.renderHomePage);

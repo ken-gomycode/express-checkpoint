@@ -1,6 +1,7 @@
 import { Request, Response } from 'express'
 
 const renderHomePage = (_: Request, res: Response) => res.render("home", { title: "Ulexo - Home" });
+
 const renderContactPage = (_: Request, res: Response) => res.render("contact", { title: "Ulexo - Contact Us" });
 
 const renderServicesPage = (_: Request, res: Response) => {
@@ -13,4 +14,5 @@ const renderServicesPage = (_: Request, res: Response) => {
 
     res.render("services", { title: "Ulexo - Our Services", services });
 };
+
 export default { renderHomePage, renderContactPage, renderServicesPage };
