@@ -1,4 +1,3 @@
-```markdown
 # Ulexo Project
 
 This project is a web application built using TypeScript, JavaScript, and npm. It includes a simple layout with a header and footer.
@@ -18,15 +17,19 @@ This project is a web application built using TypeScript, JavaScript, and npm. I
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/ken-gomycode/express-checkpoint
     ```
 2. Navigate to the project directory:
     ```sh
-    cd <project-directory>
+    cd express-checkpoint
     ```
 3. Install the dependencies:
     ```sh
     npm install
+    ```
+4. Create a `.env` file in the root directory of the project and add the following environment variables:
+    ```sh
+    PORT=3090
     ```
 
 ### Running the Application
@@ -40,4 +43,3 @@ This project is a web application built using TypeScript, JavaScript, and npm. I
 ## License
 
 This project is licensed under the MIT License.
-```
