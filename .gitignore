@@ -7,6 +7,9 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 
+# Output of 'npm build'
+dist/
+
 # Logs
 logs
 *.log
