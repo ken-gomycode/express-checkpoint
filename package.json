@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.7.4",
